@@ -46,8 +46,8 @@ section.yum {
 
 section.yum {
     grid-area: yum;
-    background: rgb(17, 244, 198);
-    background: linear-gradient(153deg, rgba(17, 244, 198, 1) 0%, rgba(24, 175, 143, 1) 100%);
+    background: #601B4A;
+    background: linear-gradient(153deg, #601C4C 0%, #601B4A 100%);
     color: #ffffff;
 }
 
@@ -111,7 +111,7 @@ section.diabeetus li a:hover {
 
 .push {
     float: right;
-    margin: 1.2em 2em
+    margin: 1.2em 2.5em;
 }
 
 .title {
@@ -127,11 +127,6 @@ section.diabeetus li a:hover {
     line-height: 1.8em;
 }
 
-#logo {
-  color: hotpink;
-}
-
-
 body,
 h1,
 h2,
@@ -144,7 +139,6 @@ h6 {
 
 body,
 html {
-
     color: #777;
     line-height: 1.8;
 }

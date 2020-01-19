@@ -2,62 +2,79 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
     <title>Grid</title>
     <meta charset="UTF-8">
-    
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href='grid.css'>
+    <link rel="stylesheet" href='overlay.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script defer src="overlay.js"></script>
+    <script defer src="swup.min.js"></script>
+    <script defer src="swup.js"></script>
+    <link href="swup.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="grid-container">
-        <main>
+        <main >
             <ul>
-                <li style="color: hotpink"><a style="padding-left: 1.5rem"><strong>fruitlocal</strong></a></li>
+                <li id="logo"><a style="padding-left: 1.5rem"><strong>grid</strong></a></li>
             </ul>
             <div class="title">
-            	Freshly<br>
+                Freshly<br>
                 Picked<br>
-                Fruits
+                <div style="color: black">Grid</div>
             </div>
             <div class="blurb">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-             tempor incididunt labore et dolore magna aliqua. Ut enim ad minim veniam,
-             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-             consequat. 
-        </div>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+            </div>
         </main>
+    
         <section class="nom w3-display-container">
-            <ul>    
-        	<li><a href="citrus.html" class="w3-display-middle" href=#>Citrus</a></li>  
-           </ul>
+            <ul>
+                <li><a href="/citrus.html" class="w3-display-middle">Grid</a></li>
+            </ul>
         </section>
         <section class="yum w3-display-container">
-             <ul>    
-        	<li><a class="w3-display-middle" href=#>Melons</a></li>  
-           </ul>
+            <ul>
+                <li><a class="w3-display-middle" href="/grid.html">Grid</a></li>
+            </ul>
         </section>
         <section class="diabeetus w3-display-container">
-            <ul>    
-        	<li><a class="w3-display-middle" href=#>Stone Fruits</a></li>  
-           </ul>
+            <ul>
+                <li><a class="w3-display-middle" href="/menu.html">Grid</a></li>
+            </ul>
         </section>
+           <section class="candy w3-display-container">
+            <ul>
+                <li><a class="w3-display-middle" href="/index.html">Grid</a></li>
+            </ul>
+        </section>
+
         <header>
             <ul>
-                <li><a><strong>Home</strong></a></li>
-                <li><a><strong>About</strong></a></li>
-               
-                <li class="push" style="margin-right: 1em"><a><i class="fa fa-bars w3-xxlarge"></i></a></li>
-             
+                <li><a href="/index.html"><strong>Home</strong></a></li>
+                <li><a href="/contact.html"><strong>Contact</strong></a></li>
+                <li class="push" onclick="openNav()" style="margin: 1.2em 2em"><i class="fa fa-bars w3-xxlarge"></i></li>
             </ul>
         </header>
 
-        <section class="candy w3-display-container"> 
-         <ul>    
-        	<li><a class="w3-display-middle" href=#>Berries & Tropical</a></li>  
-        </ul>
+    </div>
 
+
+       <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="/citrus.html" onclick="closeNav()">Citrus</a>
+            <a href="/melons.html" onclick="closeNav()">Melons</a>
+            <a href="/berries.html" onclick="closeNav()">Berries</a>
+            <a href="/tropical.html" onclick="closeNav()">Tropical</a>
+            <a href="/stonefruits.html" onclick="closeNav()">Stone Fruits</a>
+        </div>
     </div>
 </body>
 
